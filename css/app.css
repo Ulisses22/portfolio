@@ -1,0 +1,253 @@
+.info-work-education {
+    padding: 0% !important;
+    margin: 0% !important;
+    width: auto !important;
+}
+#languageList span{
+    color: #2199E8;
+}
+
+#languageList .fi-star{
+    padding-left: 1px;
+}
+
+
+.info-work-education li {
+    font-size: smaller !important;
+}
+
+.first-text {
+    border: none !important;
+}
+
+
+.client-logo {
+    height: 100px;
+}
+
+.social-icons a {
+    font-size: 20px !important;
+    font-weight: bold;
+}
+
+.accordion {
+    background-color: transparent;
+}
+
+.accordion-title {
+    font-weight: bold !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0  !important;
+    min-height: 100vh  !important;
+    display: flex  !important;
+    flex-direction: column  !important;
+}
+
+.off-canvas-wrapper {
+    bottom: 0 !important;
+}
+
+.off-canvas-content {
+    padding-bottom: 100px !important; /* Altura do footer */
+}
+
+#back-to-top-btn {
+    background-color: #555 !important;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    border-radius: 30% 30% 30% 30%;
+}
+
+
+.kode-mono {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.first-color {
+    background: #dbd8e3;
+}
+
+.third-color {
+    background: #ffffff;
+    color: #2a2438 !important;
+}
+
+
+.fourth-color {
+    background: #2a2438;
+}
+
+.fourth-color-text {
+    color: #2199E8;
+    font-weight: bold
+}
+
+.general-text,
+label {
+    color: white;
+}
+
+.avatar {
+    border-radius: 100% 100% 100% 100%;
+}
+
+.column-avatar {
+    padding: 10px;
+}
+
+.thumbnail  {
+    border: none !important;
+    width: 100%;
+    /* Define a largura da imagem como 100% do contêiner */
+    height: auto;
+    /* Permite que a altura da imagem seja ajustada automaticamente */
+    max-width: 550px;
+    /* Limita a largura máxima da imagem a 550 pixels */
+}
+
+/* card text hover */
+
+.card {
+    position: relative;
+    /* Garante que a posição da overlay seja relativa ao card */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ocupa toda a largura do card */
+    height: 86%;
+    /* Ocupa toda a altura do card */
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    /* Inicialmente oculto */
+    justify-content: start;
+    align-items: start;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    /* Transição suave de opacidade */
+    box-shadow: 0px 0px 5px 1px !important;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    /* Torna o overlay visível ao passar o mouse */
+}
+
+.card h5 {
+    padding-left: 10px;
+}
+
+/* icons */
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skills-section .icon {
+    position: absolute;
+    background-color: #2199E8;
+    /* border-radius: 30% 30% 30% 30%; */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translateX(-50%);
+    /* Ajusta a posição horizontal */
+    margin-top: -40px;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+/* skills-section */
+
+.skills-section h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.skills-section ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.skills-section .icon-skills {
+    font-size: 30px;
+}
+
+.skills-section-card {
+    position: relative;
+    padding: 15px;
+    margin-bottom: 25px;
+    /* Para que a posição do ícone seja relativa a este elemento */
+}
+
+/* menu */
+.menu-li {
+    border-bottom: 2px solid transparent;
+    /* Adiciona uma borda transparente por padrão */
+}
+
+.menu-li:hover {
+    /* background-color: #2a2438; */
+    border-bottom: 2px solid #2a2438;
+}
+
+/* chart */
+.progress-chart {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden; /* Ensure the animation stays within the bar */
+}
+
+.progress-bar::before {
+    content: attr(data-value) "%";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 1s ease-in-out; /* Smooth transition for width change */
+}
+
+/* Animation keyframes */
+@keyframes fill {
+    0% { width: 0; }
+}
+
+/* Apply animation */
+.progress-bar.animated::before {
+    animation: fill 1s ease-in-out forwards; /* Fill animation */
+}
+
+
