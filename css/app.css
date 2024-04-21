@@ -1,14 +1,26 @@
-.client-logo{
+.client-logo {
     max-width: 200px;
     margin: 15px;
     filter: grayscale(100%);
 }
-.row{
-    margin-bottom: 40px;
+
+hr {
+    margin-bottom: 40px !important;
 }
-.center {
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
+/* brands */
+.brands {
+    text-align: center;
+    /* Centraliza o conteúdo dentro da div */
+}
+
+.grid-x {
+    display: inline-block;
+    /* Mantém o conteúdo centralizado */
+}
+
+.brands .columns {
+    display: inline-block;
+    /* Mantém o conteúdo centralizado */
 }
 
 .info-work-education {
