@@ -4,7 +4,7 @@
     filter: grayscale(100%);
 }
 .row{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 .center {
     justify-content: center; /* Centraliza os itens horizontalmente */
