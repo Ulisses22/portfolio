@@ -23,6 +23,7 @@ hr {
     /* Mantém o conteúdo centralizado */
 }
 
+
 .info-work-education {
     padding: 0% !important;
     margin: 0% !important;
@@ -67,15 +68,6 @@ hr {
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    margin: 0 !important;
-    padding: 0 !important;
-    min-height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-}
-
 .off-canvas-wrapper {
     bottom: 0 !important;
 }
@@ -87,7 +79,7 @@ body {
 
 #back-to-top-btn {
     background-color: #555;
-    display: ndone;
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
