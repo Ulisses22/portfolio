@@ -1,5 +1,3 @@
-
-
 .info-work-education {
     padding: 0% !important;
     margin: 0% !important;
@@ -115,8 +113,14 @@ label {
     /* background-color: #2a2438 !important; */
 }
 
+.accordion-content .column {
+    padding: 5px;
+    margin: 0%;
+}
+
 .card {
-    height: auto; /* Defina a altura desejada para os cards */
+    height: auto;
+    /* Defina a altura desejada para os cards */
     position: relative;
 }
 
@@ -128,9 +132,11 @@ label {
 
 .thumbnail {
     width: 100%;
-    height: 150px;
+    height: 250px;
     display: block;
-    object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
+    object-fit: cover;
+    object-position: center;
+    /* Garante que a imagem cubra todo o espaço disponível */
 }
 
 .overlay {
@@ -160,7 +166,7 @@ label {
     margin-top: 0%;
 }
 
-.card-footer span{
+.card-footer span {
     font-weight: bold;
     color: white;
     padding: 5px;
