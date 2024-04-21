@@ -6,7 +6,9 @@
     <meta name="viewport"
         content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, height=device-height, target-densitydpi=device-dpi">
     <title>Welcome!</title>
+    <link rel="icon" href="img/man-technologist.png" type="image/x-icon">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/charts.css">
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +18,7 @@
 
 <body class="general-text kode-mono">
     <!-- Top Bar Navigation -->
-    <div class="top-bar" style="position: fixed; width: 100%; z-index: 9999;">
+    <div class="top-bar" style="position: sticky; top: 0; z-index: 9999;">
         <div class="top-bar-left">
             <ul class="menu">
                 <li><a class="menu-li" href="#contact">Contact</a></li>
@@ -26,7 +28,7 @@
     </div>
 
     <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" style="margin-top: 50px;" data-off-canvas-wrapper>
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
             <div class="off-canvas position-left reveal-for-large third-color" id="my-info" data-off-canvas
                 data-position="left">
@@ -118,7 +120,7 @@
                 </div>
                 <div class="callout second-color first-text ">
                     <div class="row">
-                        <h1 class="kode-mono"><span class="fourth-color-text">&lt;/&gt;Hello there!!</span></h1>
+                        <h1 class="kode-mono"><span class="fourth-color-text">&lt;/&gt;Hello there!</span></h1>
                         <p class="lead">
                             <b>At the portfolio of an
                                 exceptionally
@@ -132,7 +134,7 @@
                     <hr>
                 </div>
 
-                <div class="row column small-up-1 medium-up-3 large-up-3 skills-section">
+                <div class="row small-up-1 medium-up-3 large-up-3 skills-section">
                     <h3 class="cell shrink text-start kode-mono" style="margin-bottom: 40px;"><b>Skills Overview</b>
                     </h3>
 
@@ -193,10 +195,54 @@
                     <h3 class="cell shrink text-start kode-mono" id="backend"><b>Techs</b></h3>
                     <div class="column large-4">
 
-                        <canvas id="myDoughnutChart" width="400" height="400"></canvas>
+
+                        <ul id="skills">
+                            <p>Languages</p>
+                            <li>
+                                Javacript
+                                <div class="bar-container">
+                                    <span class="bar" data-bar='{ "color": "#19f" }'>
+                                        <span class="pct">82%</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                Python
+                                <div class="bar-container">
+                                    <span class="bar" data-bar='{ "color": "#27ae60", "delay": 600 }'>
+                                        <span class="pct">100%</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                Java
+                                <div class="bar-container">
+                                    <span class="bar" data-bar='{ "color": "#9b59b6", "delay": 1200 }'>
+                                        <span class="pct">60%</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                SQL
+                                <div class="bar-container">
+                                    <span class="bar" data-bar='{ "color": "#ae8a33", "delay": 1800 }'>
+                                        <span class="pct">30%</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <!-- <canvas id="myDoughnutChart" width="400" height="400"></canvas> -->
                     </div>
-                    <div class="column large-4"></div>
-                    <div class="column large-4"></div>
+                    <div class="column large-4">
+
+                    </div>
+
+
+                    <div class="column large-4">
+
+                    </div>
                 </div>
 
                 <hr>
@@ -232,47 +278,76 @@
 
                                 <div class="accordion-content" data-tab-content id="deeplink1">
                                     <div class="row small-up-2 medium-up-3 large-up-4">
-                                        <!-- <h3 class="cell shrink text-start" id="backend">Backend</h3> -->
-
                                         <!-- Card 1 -->
                                         <div class="column">
                                             <div class="card">
-                                                <div class="overlay fourth-color-text ">Texto sobre a imagem</div>
-                                                <img class="thumbnail" src="https://placehold.it/550x550">
-                                                <h5>My Site</h5>
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="thumbnail" src="img/backend/1.jpg">
+                                                </div>
+                                                <div class="overlay fourth-color-text">Texto sobre a imagem</div>
+                                                <div class="card-footer">
+                                                    <h5 class="kode-mono">Chat</h5>
+                                                    <span class="badge secondary">Nodejs</span>
+                                                    <span class="badge secondary">MongoBD</span>
+                                                    <span class="badge secondary">HTML/CSS</span>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <!-- Card 2 -->
                                         <div class="column">
                                             <div class="card">
-                                                <img class="thumbnail" src="https://placehold.it/550x550">
-                                                <h5>My Site</h5>
-                                                <div class="overlay fourth-color-text ">Texto sobre a imagem</div>
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="thumbnail" src="img/backend/2.png">
+                                                </div>
+                                                <div class="overlay fourth-color-text">Texto sobre a imagem</div>
+                                                <div class="card-footer">
+                                                    <h5 class="kode-mono">API Rest</h5>
+                                                    <span class="badge secondary">Java</span>
+                                                    <span class="badge secondary">Springboot</span>
+                                                    <span class="badge secondary">Hibernate</span>
+                                                    <span class="badge secondary">Json</span>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <!-- Card 3 -->
                                         <div class="column">
                                             <div class="card">
-                                                <img class="thumbnail" src="https://placehold.it/550x550">
-                                                <h5>My Site</h5>
-                                                <div class="overlay fourth-color-text ">Texto sobre a imagem</div>
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="thumbnail" src="img/backend/3.jpg">
+                                                </div>
+                                                <div class="overlay fourth-color-text">Texto sobre a imagem</div>
+                                                <div class="card-footer">
+                                                    <h5 class="kode-mono">Payment method</h5>
+                                                    <span class="badge secondary">Nojs</span>
+                                                    <span class="badge secondary">Express</span>
+                                                    <span class="badge secondary">Boostrap5</span>
+                                                    <!-- <span class="badge secondary">2</span> -->
+                                                </div>
                                             </div>
                                         </div>
 
                                         <!-- Card 4 -->
                                         <div class="column">
                                             <div class="card">
-                                                <img class="thumbnail" src="https://placehold.it/550x550">
-                                                <h5>My Site</h5>
+                                                <div class="thumbnail-wrapper">
+                                                    <img class="thumbnail" src="img/backend/4.jpg">
+                                                </div>
                                                 <div class="overlay fourth-color-text">Texto sobre a imagem</div>
+                                                <div class="card-footer">
+                                                    <h5 class="kode-mono">Financial App</h5>
+                                                    <span class="badge secondary">2</span>
+                                                    <span class="badge secondary">2</span>
+                                                    <span class="badge secondary">2</span>
+                                                    <span class="badge secondary">2</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="accordion-item" data-accordion-item>
+                            <li class="accordion-item " data-accordion-item>
                                 <a href="#deeplink2" class="accordion-title">FullStack</a>
 
                                 <div class="accordion-content" data-tab-content id="deeplink2">
@@ -280,7 +355,7 @@
                                         <!-- <h3 class="cell shrink text-start">FullStack</h3> -->
                                         <div class="column">
                                             <img class="thumbnail" src="https://placehold.it/550x550">
-                                            <h5>My Site</h5>
+                                            <h5 class="kode-mono">My Site</h5>
                                         </div>
                                         <div class="column">
                                             <img class="thumbnail" src="https://placehold.it/550x550">
@@ -363,33 +438,18 @@
         </div>
     </div>
 
-    <!-- <button id="back-to-top-btn" class="button" onclick="topFunction()"><i class="fi-arrow-up large"></i></button> -->
+    <button id="back-to-top-btn" class="button" onclick="topFunction()"><i class="fi-arrow-up large"></i></button>
 
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/charts.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
         $(document).foundation();
-
-        // // Exibir ou ocultar o botão de volta ao topo dependendo da posição da página
-        // window.onscroll = function () { scrollFunction() };
-
-        // function scrollFunction() {
-        //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        //         document.getElementById("back-to-top-btn").style.display = "block";
-        //     } else {
-        //         document.getElementById("back-to-top-btn").style.display = "none";
-        //     }
-        // }
-        // // Função para rolar suavemente para o topo da página
-        // function topFunction() {
-        //     document.body.scrollTop = 0; // Para navegadores Safari
-        //     document.documentElement.scrollTop = 0; // Para outros navegadores
-        // }
-
     </script>
-    <script>
+    <!-- <script>
         // Sample data
         const techLabels1 = ['Java', 'JavaScript', 'Python', 'Angular', 'React'];
         const techData1 = [30, 50, 40, 60, 70];
@@ -426,7 +486,7 @@
                 }
             }
         });
-    </script>
+    </script> -->
 
     <script>
         // Get all list items
@@ -446,7 +506,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>

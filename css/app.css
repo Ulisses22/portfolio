@@ -1,13 +1,16 @@
+
+
 .info-work-education {
     padding: 0% !important;
     margin: 0% !important;
     width: auto !important;
 }
-#languageList span{
+
+#languageList span {
     color: #2199E8;
 }
 
-#languageList .fi-star{
+#languageList .fi-star {
     padding-left: 1px;
 }
 
@@ -44,10 +47,10 @@ html {
 
 body {
     margin: 0 !important;
-    padding: 0  !important;
-    min-height: 100vh  !important;
-    display: flex  !important;
-    flex-direction: column  !important;
+    padding: 0 !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .off-canvas-wrapper {
@@ -55,17 +58,19 @@ body {
 }
 
 .off-canvas-content {
-    padding-bottom: 100px !important; /* Altura do footer */
+    padding-bottom: 100px !important;
+    /* Altura do footer */
 }
 
 #back-to-top-btn {
-    background-color: #555 !important;
-    display: none;
+    background-color: #555;
+    display: ndone;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 9999;
-    border-radius: 30% 30% 30% 30%;
+    border-radius: 30%;
+    padding: 10px;
 }
 
 
@@ -81,7 +86,7 @@ body {
 }
 
 .third-color {
-    background: #ffffff;
+    /* background: #ffffff; */
     color: #2a2438 !important;
 }
 
@@ -106,23 +111,26 @@ label {
 
 .column-avatar {
     padding: 10px;
+    /* color: #ffffff !important; */
+    /* background-color: #2a2438 !important; */
 }
-
-.thumbnail  {
-    border: none !important;
-    width: 100%;
-    /* Define a largura da imagem como 100% do contêiner */
-    height: auto;
-    /* Permite que a altura da imagem seja ajustada automaticamente */
-    max-width: 550px;
-    /* Limita a largura máxima da imagem a 550 pixels */
-}
-
-/* card text hover */
 
 .card {
+    height: auto; /* Defina a altura desejada para os cards */
     position: relative;
-    /* Garante que a posição da overlay seja relativa ao card */
+}
+
+/* Estilo para garantir que as imagens mantenham o mesmo tamanho */
+.thumbnail-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço disponível */
 }
 
 .overlay {
@@ -130,27 +138,33 @@ label {
     top: 0;
     left: 0;
     width: 100%;
-    /* Ocupa toda a largura do card */
-    height: 86%;
-    /* Ocupa toda a altura do card */
-    background-color: rgb(255, 255, 255);
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.936);
     opacity: 0;
-    /* Inicialmente oculto */
     justify-content: start;
     align-items: start;
     padding: 20px;
     transition: opacity 0.3s ease;
-    /* Transição suave de opacidade */
     box-shadow: 0px 0px 5px 1px !important;
 }
 
 .card:hover .overlay {
     opacity: 1;
-    /* Torna o overlay visível ao passar o mouse */
 }
 
-.card h5 {
+.card-footer {
+    text-align: center;
     padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+.card-footer span{
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    border-radius: 100px 100px 100px 100px !important;
 }
 
 /* icons */
@@ -227,7 +241,8 @@ label {
     padding: 5px;
     background-color: #f0f0f0;
     border-radius: 5px;
-    overflow: hidden; /* Ensure the animation stays within the bar */
+    overflow: hidden;
+    /* Ensure the animation stays within the bar */
 }
 
 .progress-bar::before {
@@ -237,17 +252,19 @@ label {
     height: 100%;
     background-color: #007bff;
     border-radius: 5px;
-    transition: width 1s ease-in-out; /* Smooth transition for width change */
+    transition: width 1s ease-in-out;
+    /* Smooth transition for width change */
 }
 
 /* Animation keyframes */
 @keyframes fill {
-    0% { width: 0; }
+    0% {
+        width: 0;
+    }
 }
 
 /* Apply animation */
 .progress-bar.animated::before {
-    animation: fill 1s ease-in-out forwards; /* Fill animation */
+    animation: fill 1s ease-in-out forwards;
+    /* Fill animation */
 }
-
-
