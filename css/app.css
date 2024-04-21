@@ -1,3 +1,16 @@
+.client-logo{
+    max-width: 200px;
+    margin: 15px;
+    filter: grayscale(100%);
+}
+.row{
+    margin-bottom: 80px;
+}
+.center {
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+}
+
 .info-work-education {
     padding: 0% !important;
     margin: 0% !important;
