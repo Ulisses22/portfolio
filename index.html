@@ -295,9 +295,12 @@
                                                 <div class="overlay">
                                                     <p class="lead">Type: Personal Project</p>
                                                     <p>
-                                                        This is a simple real-time chat application built using Nodejs, Express.js, Socket.IO, and MongoDB.
+                                                        This is a simple real-time chat application built using Nodejs,
+                                                        Express.js, Socket.IO, and MongoDB.
                                                     </p>
-                                                    <a target="_blank" href="https://github.com/Ulisses22/real-time-chat-app?tab=readme-ov-file#real-time-chat-app"><span class="fi-link"></span> Learn more</a>
+                                                    <a target="_blank"
+                                                        href="https://github.com/Ulisses22/real-time-chat-app?tab=readme-ov-file#real-time-chat-app"><span
+                                                            class="fi-link"></span> Learn more</a>
                                                 </div>
                                                 <div class="card-footer">
                                                     <h5 class="kode-mono">Real-time Chat</h5>
@@ -318,9 +321,12 @@
                                                 <div class="overlay">
                                                     <p class="lead">Type: Personal Project</p>
                                                     <p>
-                                                        Mini project shows how to connect Python with a Google Sheets API and update data with automation.
+                                                        Mini project shows how to connect Python with a Google Sheets
+                                                        API and update data with automation.
                                                     </p>
-                                                    <a target="_blank" href="https://github.com/Ulisses22/google-sheets-api"><span class="fi-link"></span> Learn more</a>
+                                                    <a target="_blank"
+                                                        href="https://github.com/Ulisses22/google-sheets-api"><span
+                                                            class="fi-link"></span> Learn more</a>
                                                 </div>
                                                 <div class="card-footer">
                                                     <h5 class="kode-mono">Google Sheets API</h5>
@@ -358,9 +364,12 @@
                                                 <div class="overlay">
                                                     <p class="lead">Type: Personal Project</p>
                                                     <p>
-                                                        That is a financial web application with EJS, Bootstrap 5, Mongoose(Atlas) and more.
+                                                        That is a financial web application with EJS, Bootstrap 5,
+                                                        Mongoose(Atlas) and more.
                                                     </p>
-                                                    <a target="_blank" href="https://github.com/Ulisses22/financial_web_app?tab=readme-ov-file#financial-web-app---preview"><span class="fi-link"></span> Learn more</a>
+                                                    <a target="_blank"
+                                                        href="https://github.com/Ulisses22/financial_web_app?tab=readme-ov-file#financial-web-app---preview"><span
+                                                            class="fi-link"></span> Learn more</a>
                                                 </div>
                                                 <div class="card-footer">
                                                     <h5 class="kode-mono">Financial App</h5>
@@ -448,18 +457,20 @@
                         <h3 class="cell shrink text-start kode-mono">📩 Get In Touch</h3>
                         <form action="https://formbold.com/s/67KXD" method="POST" id="contact">
                             <label>Name
-                                <input type="text" placeholder="Name" name="name" required>
+                                <input type="text" placeholder="Name" name="name" pattern="[\p{L}\s]+"
+                                    title="Name must contain only letters and spaces" maxlength="40" required>
                             </label>
                             <label>Email
-                                <input type="text" placeholder="Email" name="email" required>
+                                <input type="email" placeholder="Email" name="email" maxlength="50" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}" required>
                             </label>
                             <label>
                                 Message
-                                <textarea placeholder="" name="message" required></textarea>
+                                <textarea placeholder="" name="message" maxlength="500" required></textarea>
                             </label>
                             <input type="submit" class="button expanded" value="Submit">
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
