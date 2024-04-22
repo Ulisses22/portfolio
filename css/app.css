@@ -85,11 +85,11 @@ html {
     background-color: #555;
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 5px;
+    right: 5px;
     z-index: 9999;
-    border-radius: 30%;
-    padding: 10px;
+    border-radius: 100%;
+    padding: 10px 14px 10px 14px;
 }
 
 
