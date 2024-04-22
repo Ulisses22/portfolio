@@ -1,7 +1,7 @@
 .client-logo {
     max-width: 200px;
     margin: 15px;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
 .client-logo:hover {
     filter: none;
