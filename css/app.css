@@ -3,6 +3,9 @@
     margin: 15px;
     filter: grayscale(100%);
 }
+.client-logo:hover {
+    filter: none;
+}
 
 hr {
     margin-bottom: 40px !important;
@@ -62,6 +65,7 @@ hr {
 }
 
 .accordion-title {
+    font-size: large !important;
     font-weight: bold !important;
 }
 
