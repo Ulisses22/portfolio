@@ -130,8 +130,11 @@ label {
 
 .column-avatar {
     padding: 10px;
-    /* color: #ffffff !important; */
-    /* background-color: #2a2438 !important; */
+}
+
+#my-info{
+    color: #ffffff !important;
+    background-color: #222831 !important;
 }
 
 .accordion-content .column {
