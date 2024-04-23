@@ -26,20 +26,53 @@ hr {
     width: 100% !important;
     margin-top: 35px;
     display: flex;
+    flex-wrap: wrap; /* Permite que os elementos envolvam em dispositivos móveis */
 
     span {
-        margin: 0%;
-        padding: 0%;
+        margin-right: 5px; /* Adiciona espaço entre o span e o texto */
         width: 15px;
         height: 15px;
         display: inline-block;
     }
 
     p {
-        margin-left: 0px; /* Remova o espaçamento padrão dos parágrafos, se desejar */
-        margin-right: 20px; /* Remova o espaçamento padrão dos parágrafos, se desejar */
+        margin-left: 0; /* Remova o espaçamento padrão dos parágrafos */
+        margin-right: 0; /* Remova o espaçamento padrão dos parágrafos */
+        margin-bottom: 10px; /* Adiciona espaço entre os parágrafos */
+        width: 100%; /* Garante que os parágrafos ocupem toda a largura */
     }
 }
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 640px) {
+    .colors-charts-mean {
+        display: none; /* Oculta a última coluna em dispositivos móveis */
+    }
+
+    .row {
+        flex-wrap: wrap; /* Permitir que as colunas se envolvam em dispositivos móveis */
+    }
+
+    .column {
+        width: 100%; /* Define a largura total para todas as colunas em dispositivos móveis */
+        margin-bottom: 20px; /* Adiciona espaçamento entre as colunas */
+    }
+
+    .bar-container {
+        margin-top: 10px; /* Adiciona espaçamento entre as barras de progresso */
+    }
+
+    span {
+        width: 10px; /* Reduz o tamanho dos quadrados de cores */
+        height: 10px;
+    }
+
+    p {
+        margin-top: 5px; /* Adiciona espaçamento entre os parágrafos */
+        margin-bottom: 0; /* Remove o espaçamento inferior dos parágrafos */
+    }
+}
+
 
 
 .info-work-education {
