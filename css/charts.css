@@ -4,7 +4,7 @@
 
 #skills {
     margin: 0 auto;
-    max-width: 960px;
+    /* max-width: 960px; */
 
     li {
         list-style: none;
@@ -22,20 +22,65 @@
         .bar-container {
             bottom: -8px;
             width: 100%;
-            background-color: #333;
-            text-align: right;
+            background-color: #ffffff;
+            /* text-align: right; */
 
-            .bar {
+            /* .bar {
                 top: 0;
-            }
+            } */
 
             .pct {
-                position: absolute;
+                display: none;
+                /* position: absolute;
                 top: -19px;
                 right: 0;
-                opacity: 0;
-                transition: opacity 0.3s linear !important;
+                opacity: 0; */
+                transition: opacity 5s linear !important;
             }
         }
     }
+}
+
+/* chart */
+.progress-chart {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.progress-bar {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    /* Ensure the animation stays within the bar */
+}
+
+.progress-bar::before {
+    content: attr(data-value) "%";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #007bff;
+    /* border-radius: 5px; */
+    transition: width 5s ease-in-out;
+    /* Smooth transition for width change */
+}
+
+/* Animation keyframes */
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+}
+
+/* Apply animation */
+.progress-bar.animated::before {
+    animation: fill 5s ease-in-out forwards;
+    /* Fill animation */
+}
+
+label{
+    color: #ffffff !important;
+    font-size: medium !important;
 }
