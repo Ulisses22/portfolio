@@ -44,7 +44,7 @@ hr {
 }
 
 /* Ajustes para dispositivos móveis */
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
     .colors-charts-mean {
         display: none; /* Oculta a última coluna em dispositivos móveis */
     }
@@ -71,7 +71,7 @@ hr {
         margin-top: 5px; /* Adiciona espaçamento entre os parágrafos */
         margin-bottom: 0; /* Remove o espaçamento inferior dos parágrafos */
     }
-}
+} */
 
 
 
