@@ -43,36 +43,6 @@ hr {
     }
 }
 
-/* Ajustes para dispositivos móveis */
-/* @media (max-width: 640px) {
-    .colors-charts-mean {
-        display: none; /* Oculta a última coluna em dispositivos móveis */
-    }
-
-    .row {
-        flex-wrap: wrap; /* Permitir que as colunas se envolvam em dispositivos móveis */
-    }
-
-    .column {
-        width: 100%; /* Define a largura total para todas as colunas em dispositivos móveis */
-        margin-bottom: 20px; /* Adiciona espaçamento entre as colunas */
-    }
-
-    .bar-container {
-        margin-top: 10px; /* Adiciona espaçamento entre as barras de progresso */
-    }
-
-    span {
-        width: 10px; /* Reduz o tamanho dos quadrados de cores */
-        height: 10px;
-    }
-
-    p {
-        margin-top: 5px; /* Adiciona espaçamento entre os parágrafos */
-        margin-bottom: 0; /* Remove o espaçamento inferior dos parágrafos */
-    }
-} */
-
 
 
 .info-work-education {
