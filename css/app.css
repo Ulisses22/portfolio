@@ -3,27 +3,38 @@
     margin: 15px;
     /* filter: grayscale(100%); */
 }
+
 .client-logo:hover {
     filter: none;
 }
 
 hr {
-    margin-bottom: 40px !important;
+    margin-bottom: 10px !important;
 }
+
 /* brands */
-.brands {
-    text-align: center;
-    /* Centraliza o conteúdo dentro da div */
-}
-
-.grid-x {
-    display: inline-block;
-    /* Mantém o conteúdo centralizado */
-}
-
 .brands .columns {
+    text-align: center;
     display: inline-block;
-    /* Mantém o conteúdo centralizado */
+}
+
+.colors-charts-mean {
+    width: 100% !important;
+    margin-top: 35px;
+    display: flex;
+
+    span {
+        margin: 0%;
+        padding: 0%;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+    }
+
+    p {
+        margin-left: 0px; /* Remova o espaçamento padrão dos parágrafos, se desejar */
+        margin-right: 20px; /* Remova o espaçamento padrão dos parágrafos, se desejar */
+    }
 }
 
 
@@ -72,6 +83,7 @@ hr {
 html {
     scroll-behavior: smooth;
 }
+
 .off-canvas-wrapper {
     bottom: 0 !important;
 }
@@ -109,7 +121,8 @@ html {
     color: #ffffff !important;
     background-color: #222831 !important
 }
-.second-color{
+
+.second-color {
     /* background: #ffffff; */
     color: #ffffff !important;
     background-color: #222831 !important
@@ -138,7 +151,7 @@ label {
     padding: 10px;
 }
 
-#my-info{
+#my-info {
     color: #ffffff !important;
     background-color: #222831 !important;
 }
@@ -146,13 +159,13 @@ label {
 .accordion-content .column {
     padding: 5px;
     margin: 0%;
-    
+
 }
 
-.accordion{
-        /* background: #ffffff; */
-        color: #ffffff !important;
-        background-color: #222831 !important
+.accordion {
+    /* background: #ffffff; */
+    color: #ffffff !important;
+    background-color: #222831 !important
 }
 
 .card {
@@ -182,13 +195,18 @@ label {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #222831f9;
+    background-color: #fffffff9;
+    color: #007bff;
     opacity: 0;
     justify-content: start;
     align-items: start;
     padding: 20px;
     transition: opacity 0.3s ease;
     box-shadow: 0px 0px 5px 1px !important;
+
+    .lead{
+        font-weight: bold;
+    }
 }
 
 .card:hover .overlay {
