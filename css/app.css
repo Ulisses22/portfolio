@@ -241,6 +241,19 @@ label {
     }
 }
 
+@media (max-width: 640px) {
+    .overlay {
+        font-size: x-small;
+        padding: 10px;
+
+        p{
+            padding: 0%;
+            margin: 5px;
+        }
+        height: 66%;
+    }
+}
+
 .card:hover .overlay {
     opacity: 1;
 }
