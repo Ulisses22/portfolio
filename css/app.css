@@ -446,8 +446,8 @@ label {
 }
 
 
-#Modal1{
+.reveal{
     color: #222831;
-    margin: 10px;
-    
+    margin-top: 30% !important;
+
 }
