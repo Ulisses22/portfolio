@@ -663,6 +663,7 @@
         var i = 0;
 
         function typeWriter() {
+            console.log(1);
             if (i < text.length) {
                 document.querySelector('.welcome .fourth-color-text').innerHTML += text.charAt(i);
                 i++;
@@ -670,7 +671,7 @@
             }
         }
 
-        typeWriter();
+        setInterval(typeWriter(), 20000);
     </script>
 </body>
 
