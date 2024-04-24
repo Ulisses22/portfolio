@@ -397,15 +397,38 @@ label {
 /* Altera a cor da borda da barra de rolagem */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;/* cor da borda da barra de rolagem quando o mouse está sobre ela */
-}/* Estilos gerais */
+}
+
+
+/* Estilos para a barra superior */
+.top-bar {
+    display: flex; /* Ativa o modelo de layout flexível */
+    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal (horizontal) */
+}
+
+/* Estilos para a lista de menu */
+.menu {
+    display: flex; /* Ativa o modelo de layout flexível para os itens do menu */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+/* Estilos para os itens do menu */
 .menu-li {
     font-size: 1em; /* Tamanho de fonte padrão */
     padding: 0.5em 1em; /* Espaçamento interno */
 }
 
-/* Media query para ajustar o tamanho da fonte em telas menores */
+/* Estilos para a barra direita */
+.top-bar-right {
+    display: flex; /* Ativa o modelo de layout flexível */
+    align-items: center; /* Centraliza verticalmente os itens */
+}
+
+/* Media query para ajustes em dispositivos móveis */
 @media only screen and (max-width: 600px) {
     .menu-li {
         font-size: 0.8em; /* Reduz o tamanho da fonte para telas menores */
     }
 }
+
