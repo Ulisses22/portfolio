@@ -24,7 +24,8 @@
                 <li><a class="menu-li" href="#contact">Contact</a></li>
                 <li><a class="menu-li" href="#social">Social</a></li>
                 <li><a class="menu-li" href="#">Motivation</a></li>
-                <li><a class="menu-li" href="s/ulisses_alves_CV_.pdf" download="s/ulisses_alves_CV_.pdf"><i class="fi-download"></i>CV</a></li>
+                <li><a class="menu-li" href="s/ulisses_alves_CV_.pdf" download="s/ulisses_alves_CV_.pdf"><i
+                            class="fi-download"></i>CV</a></li>
             </ul>
         </div>
     </div>
@@ -123,7 +124,9 @@
                 </div>
                 <div class="callout second-color first-text" style="margin-bottom: 80px;">
                     <div class="row">
-                            <h1 class="kode-mono"><span class="fourth-color-text">&lt;/&gt;Hello there!</span></h1>
+                        <h1 class="kode-mono welcome">
+                            <span class="fourth-color-text"></span>
+                        </h1>
                         <p class="lead">
                             <b>Welcome to the portfolio of someone who's always seeking knowledge and exploring new
                                 horizons.</b>
@@ -209,7 +212,7 @@
                         </div>
                         <div class="columns">
                             <img class="client-logo" src="img/brands/logo_smart_c.png" alt="" loading="lazy"
-                            style="background-color: rgba(255, 255, 255, 0.050); padding: 5px;">
+                                style="background-color: rgba(255, 255, 255, 0.050); padding: 5px;">
                         </div>
                         <div class="columns">
                             <img class="client-logo" src="img/brands/Logo_Wondercom.png" alt="" loading="lazy">
@@ -484,7 +487,7 @@
                                                                 class="fi-link"></span> Learn more</a>
                                                     </div>
                                                 </div>
-                                                
+
                                                 <div class="card-footer">
                                                     <h5 class="kode-mono">Financial App</h5>
                                                     <span class="badge secondary">Nodejs</span>
@@ -494,7 +497,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="column">
                                             <div class="card">
                                                 <div class="thumbnail-wrapper">
@@ -654,7 +657,21 @@
             document.documentElement.scrollTop = 0; // Para outros navegadores
         }
     </script>
+    <script>
+        var text = "</>Hello there!";
+        var speed = 150;
+        var i = 0;
 
+        function typeWriter() {
+            if (i < text.length) {
+                document.querySelector('.welcome .fourth-color-text').innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+    </script>
 </body>
 
 </html>
