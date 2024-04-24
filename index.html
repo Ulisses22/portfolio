@@ -23,7 +23,7 @@
             <ul class="menu">
                 <li><a class="menu-li" href="#contact">Contact</a></li>
                 <li><a class="menu-li" href="#social">Social</a></li>
-                <li><a class="menu-li" href="#resume"><i class="fi-download"></i>Resume</a></li>
+                <li><a class="menu-li" href="s/ulisses_alves_CV_.pdf" download="s/ulisses_alves_CV_.pdf"><i class="fi-download"></i>Resume</a></li>
             </ul>
         </div>
     </div>
@@ -367,7 +367,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="column colors-charts-mean">
+                    <!-- <div class="column colors-charts-mean">
                         <p>
                             <span style="background-color: #19f !important;"></span>
                             Professional
@@ -384,7 +384,7 @@
                             <span style="background-color: #ae8a33 !important;"></span>
                             Beginner
                         </p>
-                    </div>
+                    </div> -->
                 </div>
 
                 <hr>
@@ -651,28 +651,6 @@
             document.body.scrollTop = 0; // Para navegadores Safari
             document.documentElement.scrollTop = 0; // Para outros navegadores
         }
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var skillsSection = document.querySelector('.start_skill_anicamation');
-            var skillsSectionTop = skillsSection.getBoundingClientRect().top;
-            var skillsSectionHeight = skillsSection.clientHeight;
-
-            function checkScroll() {
-                var viewportTop = window.scrollY;
-                var viewportBottom = viewportTop + window.innerHeight;
-
-                if (viewportTop < (skillsSectionTop + skillsSectionHeight) && viewportBottom > skillsSectionTop) {
-                    skillsSection.classList.add('visible');
-                } else {
-                    skillsSection.classList.remove('visible');
-                }
-            }
-
-            window.addEventListener('scroll', checkScroll);
-            checkScroll();
-        });
     </script>
 
 </body>
