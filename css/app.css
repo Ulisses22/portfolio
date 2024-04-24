@@ -13,15 +13,16 @@ hr {
     margin-bottom: 10px !important;
 }
 
-#techs{
+#techs {
     margin-top: 50px;
 
-    .column{
+    .column {
         margin: 0%;
         padding: 8px;
         margin-bottom: 20px;
     }
-    #skills p{
+
+    #skills p {
         font-weight: bold;
     }
 }
@@ -36,7 +37,7 @@ hr {
     width: 100% !important;
     margin-top: 35px;
     display: flex;
-     /* Permite que os elementos envolvam em dispositivos móveis */
+    /* Permite que os elementos envolvam em dispositivos móveis */
 
 
     span {
@@ -48,9 +49,12 @@ hr {
     }
 
     p {
-        margin-left: 0; /* Remova o espaçamento padrão dos parágrafos */
-        margin-right: 10px; /* Remova o espaçamento padrão dos parágrafos */
-        margin-bottom: 10px; /* Adiciona espaço entre os parágrafos */
+        margin-left: 0;
+        /* Remova o espaçamento padrão dos parágrafos */
+        margin-right: 10px;
+        /* Remova o espaçamento padrão dos parágrafos */
+        margin-bottom: 10px;
+        /* Adiciona espaço entre os parágrafos */
     }
 }
 
@@ -95,7 +99,7 @@ hr {
     font-weight: bold;
 }
 
-.social-icons{
+.social-icons {
     margin-bottom: 30px !important;
 }
 
@@ -132,7 +136,7 @@ html {
     padding: 10px 14px 10px 14px;
 }
 
-.fi-arrow-up{
+.fi-arrow-up {
     font-size: large;
     color: #222831;
 }
@@ -214,15 +218,17 @@ label {
     display: block;
     object-fit: cover;
     object-position: center;
-    border: none !important; 
+    border: none !important;
     box-shadow: #007bff 14px 14px 14px 14px !important;
 }
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Alterado para 100% */
+    height: 100%;
+    /* Alterado para 100% */
     background-color: #fffffff9;
     color: #007bff;
     opacity: 0;
@@ -244,11 +250,12 @@ label {
     .overlay {
         font-size: small;
 
-        .lead{
+        .lead {
             font-size: small !important;
         }
     }
 }
+
 /* card */
 .card:hover .overlay {
     opacity: 1;
@@ -339,3 +346,28 @@ label {
     border-bottom: 2px solid #2a2438;
 }
 
+/* Typewriter Effect */
+.welcome {
+    display: grid;
+}
+
+.welcome .fourth-color-text {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    justify-self: flex-start;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
