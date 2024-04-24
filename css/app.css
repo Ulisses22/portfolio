@@ -352,7 +352,7 @@ label {
 }
 
 .welcome .fourth-color-text {
-    width: 22ch;
+    width: 16ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -370,4 +370,31 @@ label {
     50% {
         border-color: transparent
     }
+}
+
+.top-bar-right {
+    margin-right: 10px;
+    padding: 0;
+    font-size: 3ch;
+}
+
+/* Scroll */
+/* Altera a cor da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px; /* largura da barra de rolagem */
+}
+
+/* Altera a cor do fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #ffffff; /* cor de fundo da barra de rolagem */
+}
+
+/* Altera a cor do indicador da posição atual */
+::-webkit-scrollbar-thumb {
+    background: #2199E8;/* cor do indicador da posição atual */
+}
+
+/* Altera a cor da borda da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;/* cor da borda da barra de rolagem quando o mouse está sobre ela */
 }
