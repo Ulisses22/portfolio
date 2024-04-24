@@ -403,8 +403,8 @@ label {
 /* Estilos para a barra superior */
 .top-bar {
     display: flex; /* Ativa o modelo de layout flexível */
-    justify-content: center; /* Centraliza os itens ao longo do eixo principal (horizontal) */
-    align-items: center;
+    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal */
+    align-items: center; /* Centraliza verticalmente os itens */
 }
 
 /* Estilos para a lista de menu */
@@ -426,7 +426,7 @@ label {
     align-items: center; /* Centraliza verticalmente os itens */
 
     a{
-        margin: 3px;
+        margin-right: 5px;
     }
 }
 
@@ -435,5 +435,12 @@ label {
     .menu-li {
         font-size: 0.8em; /* Reduz o tamanho da fonte para telas menores */
     }
-}
 
+    .top-bar {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+    }
+
+    .top-bar-left, .top-bar-right {
+        align-self: center; /* Centraliza horizontalmente os itens */
+    }
+}
