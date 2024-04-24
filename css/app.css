@@ -403,7 +403,8 @@ label {
 /* Estilos para a barra superior */
 .top-bar {
     display: flex; /* Ativa o modelo de layout flexível */
-    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal (horizontal) */
+    justify-content: center; /* Centraliza os itens ao longo do eixo principal (horizontal) */
+    align-items: center;
 }
 
 /* Estilos para a lista de menu */
