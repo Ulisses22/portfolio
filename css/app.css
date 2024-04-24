@@ -408,14 +408,14 @@ label {
 }
 
 /* Estilos para a lista de menu */
-.menu {
+.top-bar .menu {
     display: flex; /* Ativa o modelo de layout flexível para os itens do menu */
     padding: 0; /* Remove o preenchimento padrão da lista */
     list-style: none; /* Remove os marcadores de lista */
 }
 
 /* Estilos para os itens do menu */
-.menu-li {
+.top-bar .menu-li {
     font-size: 1em; /* Tamanho de fonte padrão */
     padding: 0.5em 1em; /* Espaçamento interno */
 }
