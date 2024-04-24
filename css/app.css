@@ -245,7 +245,7 @@ label {
         font-size: small;
 
         .lead{
-            font-size: x-small !important;
+            font-size: small !important;
         }
     }
 }
