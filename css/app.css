@@ -243,6 +243,10 @@ label {
 @media (max-width: 640px) {
     .overlay {
         font-size: small;
+
+        .lead{
+            font-size: small;
+        }
     }
 }
 
