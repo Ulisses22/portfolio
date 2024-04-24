@@ -423,6 +423,10 @@ label {
 .top-bar-right {
     display: flex; /* Ativa o modelo de layout flexível */
     align-items: center; /* Centraliza verticalmente os itens */
+
+    a{
+        margin: 2px;
+    }
 }
 
 /* Media query para ajustes em dispositivos móveis */
