@@ -201,11 +201,6 @@ label {
     background-color: #222831 !important
 }
 
-.card {
-    height: auto;
-    /* Defina a altura desejada para os cards */
-    position: relative;
-}
 
 /* Estilo para garantir que as imagens mantenham o mesmo tamanho */
 .thumbnail-wrapper {
@@ -219,7 +214,8 @@ label {
     display: block;
     object-fit: cover;
     object-position: center;
-    /* Garante que a imagem cubra todo o espaço disponível */
+    border: none !important; 
+    box-shadow: #007bff 14px 14px 14px 14px !important;
 }
 .overlay {
     position: absolute;
@@ -234,7 +230,6 @@ label {
     align-items: start;
     padding: 20px;
     transition: opacity 0.3s ease;
-    box-shadow: 0px 0px 5px 1px !important;
 
     .lead {
         font-weight: bold;
@@ -254,7 +249,7 @@ label {
         }
     }
 }
-
+/* card */
 .card:hover .overlay {
     opacity: 1;
 }
@@ -263,7 +258,7 @@ label {
     text-align: center;
     padding-left: 10px;
     padding-bottom: 5px;
-    padding-top: 0%;
+    padding-top: 10px;
     margin-top: 0%;
 }
 
@@ -274,6 +269,12 @@ label {
     padding: 5px;
     border-radius: 100px 100px 100px 100px !important;
 }
+
+
+/* .card {
+    height: auto;
+    position: relative;
+} */
 
 /* icons */
 
