@@ -14,6 +14,15 @@ hr {
 
 #techs{
     margin-top: 50px;
+
+    .column{
+        margin: 0%;
+        padding: 8px;
+        margin-bottom: 25px;
+    }
+    #skills p{
+        font-weight: bold;
+    }
 }
 
 /* brands */
@@ -26,21 +35,29 @@ hr {
     width: 100% !important;
     margin-top: 35px;
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos envolvam em dispositivos móveis */
+     /* Permite que os elementos envolvam em dispositivos móveis */
+
 
     span {
-        margin-right: 5px; /* Adiciona espaço entre o span e o texto */
         width: 15px;
         height: 15px;
         display: inline-block;
+        margin: 0%;
+        padding: 0%;
     }
 
     p {
         margin-left: 0; /* Remova o espaçamento padrão dos parágrafos */
-        margin-right: 0; /* Remova o espaçamento padrão dos parágrafos */
+        margin-right: 10px; /* Remova o espaçamento padrão dos parágrafos */
         margin-bottom: 10px; /* Adiciona espaço entre os parágrafos */
-        width: 100%; /* Garante que os parágrafos ocupem toda a largura */
     }
+}
+
+@media (max-width: 640px) {
+    .colors-charts-mean {
+        flex-wrap: wrap;
+    }
+
 }
 
 
