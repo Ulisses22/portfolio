@@ -372,11 +372,6 @@ label {
     }
 }
 
-.top-bar-right {
-    margin-right: 10px;
-    padding: 0;
-    font-size: 3ch;
-}
 
 /* Scroll */
 /* Altera a cor da barra de rolagem */
@@ -405,18 +400,13 @@ label {
 
 
 /* Estilos para a barra superior */
+
 .top-bar {
     display: flex; /* Ativa o modelo de layout flexível */
     justify-content: space-between; /* Distribui os elementos ao longo do eixo principal (horizontal) */
     align-items: center;
 }
 
-/* Estilos para a lista de menu */
-.menu {
-    display: flex; /* Ativa o modelo de layout flexível para os itens do menu */
-    padding: 0; /* Remove o preenchimento padrão da lista */
-    list-style: none; /* Remove os marcadores de lista */
-}
 
 /* Estilos para os itens do menu */
 .menu-li {
@@ -428,12 +418,18 @@ label {
 .top-bar-right {
     display: flex; /* Ativa o modelo de layout flexível */
     align-items: center; /* Centraliza verticalmente os itens */
+    padding: 0;
+    font-size: 3ch;
 }
 
 /* Media query para ajustes em dispositivos móveis */
 @media only screen and (max-width: 600px) {
     .menu-li {
         font-size: 0.8em; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .top-bar{
+        padding-left: 0px !important;
     }
 }
 
