@@ -95,6 +95,10 @@ hr {
     height: 100px;
 }
 
+#social{
+    margin-top: 50px;
+}
+
 .social-icons a {
     font-size: 20px !important;
     font-weight: bold;
@@ -102,6 +106,10 @@ hr {
 
 .social-icons {
     margin-bottom: 30px !important;
+}
+
+.top-bar-right [class^="fi-social-"]:hover {
+    color: #2a2438;
 }
 
 .accordion {
