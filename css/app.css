@@ -471,7 +471,7 @@ label {
 }
 
 
-#Modal1 {
+#Modal1, #Modal2 {
     color: #222831;
     margin-top: 30% !important;
 }
@@ -485,4 +485,8 @@ body {
 label{
     
     font-size: medium !important;
+}
+
+.about-portfolio{
+    padding-left: 30px;
 }
