@@ -23,7 +23,7 @@
                         $bar.css("background-color", data.color)
                             .animate({
                                 "width": $pct.html()
-                            }, data.speed || 7000, function() {
+                            }, data.speed || 5000, function() {
                                 $pct.css({
                                     "color": data.color,
                                     "opacity": 1
