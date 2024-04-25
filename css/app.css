@@ -1,3 +1,4 @@
+
 .client-logo {
     max-width: 200px;
     margin: 15px;
@@ -441,4 +442,9 @@ label {
 #Modal1 {
     color: #222831;
     margin-top: 30% !important;
+}
+
+
+body {
+    margin: 0;
 }
