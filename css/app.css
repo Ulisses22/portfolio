@@ -7,6 +7,10 @@
     filter: none;
 }
 
+.client-logo {
+    height: 110px;
+}
+
 hr {
     width: 90%;
     margin-bottom: 10px !important;
@@ -88,10 +92,6 @@ hr {
     border: none !important;
 }
 
-
-.client-logo {
-    height: 100px;
-}
 
 #social{
     margin-top: 50px;
