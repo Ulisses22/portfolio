@@ -119,24 +119,21 @@ hr {
     border: none !important;
 }
 
-
-#social{
-    margin-top: 50px;
-}
-
 .social-icons a {
+    padding-left: 0% !important;
     font-size: 20px !important;
     font-weight: bold;
 }
 
-.social-icons span{
-    margin: 2px;
-}
-
 .social-icons {
-    max-width: 100% !important;
     margin-bottom: 30px !important;
 }
+
+.social-icons [class^="fi-social"] {
+    align-self: center;
+    margin: 3px !important;
+}
+
 
 .top-bar-right [class^="fi-"]:hover {
     color: #2a2438;
