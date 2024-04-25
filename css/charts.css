@@ -1,3 +1,4 @@
+
 .skills ul {
     list-style-type: none;
 }
@@ -25,9 +26,9 @@
             background-color: #ffffff;
             /* text-align: right; */
 
-            /* .bar {
+            .bar {
                 top: 0;
-            } */
+            } 
 
             .pct {
                 display: none;
