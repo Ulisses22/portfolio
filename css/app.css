@@ -420,6 +420,10 @@ label {
     align-items: center; /* Centraliza verticalmente os itens */
     padding: 0;
     font-size: 3ch;
+
+    a{
+        margin-right: 3px;
+    }
 }
 
 /* Media query para ajustes em dispositivos móveis */
