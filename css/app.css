@@ -129,7 +129,12 @@ hr {
     font-weight: bold;
 }
 
+.social-icons span{
+    margin: 2px;
+}
+
 .social-icons {
+    max-width: 100% !important;
     margin-bottom: 30px !important;
 }
 
