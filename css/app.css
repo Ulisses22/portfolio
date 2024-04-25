@@ -300,7 +300,9 @@ label {
     margin-bottom: 10px;
 }
 
-
+.callout{
+    margin-bottom: 30px !important;
+}
 
 /* skills-section */
 
