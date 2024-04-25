@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Kode Mono";
+    src: url('../source/Kode_Mono/KodeMono-VariableFont_wght.ttf') format('truetype');
+    /* Adicione outros formatos de fonte aqui, se necessário */
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.kode-mono {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
 .client-logo{
     margin-bottom: 10px;
@@ -82,6 +97,18 @@ hr {
 #languageList .fi-star {
     padding-left: 1px;
 }
+/* Estilos para alinhar verticalmente as estrelas */
+#languageList {
+    list-style-type: none; /* Remover estilos padrão de lista */
+    padding: 0;
+    margin: 0;
+}
+
+#languageList li {
+    display: flex; /* Usar layout flexível */
+    align-items: center; /* Alinhar verticalmente os itens */
+    justify-content: space-between; /* Espaçamento igual entre os itens */
+}
 
 
 .info-work-education li {
@@ -106,7 +133,7 @@ hr {
     margin-bottom: 30px !important;
 }
 
-.top-bar-right [class^="fi-social-"]:hover {
+.top-bar-right [class^="fi-"]:hover {
     color: #2a2438;
 }
 
@@ -146,14 +173,6 @@ html {
 .fi-arrow-up {
     font-size: large;
     color: #222831;
-}
-
-
-.kode-mono {
-    font-family: "Kode Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .first-color {
@@ -348,6 +367,7 @@ label {
 
 /* menu */
 .menu-li {
+    font-weight: bold;
     border-bottom: 2px solid transparent;
     /* Adiciona uma borda transparente por padrão */
 }
