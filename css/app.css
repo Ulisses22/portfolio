@@ -512,6 +512,6 @@ label {
 .point+.row {
     opacity: 0;
     /* Começa com opacidade 0 (invisível) */
-    transition: opacity 5s;
+    transition: opacity 3s;
     /* Adiciona uma transição suave */
 }
