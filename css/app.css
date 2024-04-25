@@ -381,41 +381,45 @@ label {
 /* Scroll */
 /* Altera a cor da barra de rolagem */
 ::-webkit-scrollbar {
-    width: 10px; /* largura da barra de rolagem */
+    width: 10px;
+    /* largura da barra de rolagem */
 }
 
 /* Altera a cor do fundo da barra de rolagem */
 ::-webkit-scrollbar-track {
-    background: #ffffff; /* cor de fundo da barra de rolagem */
+    background: #ffffff;
+    /* cor de fundo da barra de rolagem */
 }
 
 /* Altera a cor do indicador da posição atual */
 ::-webkit-scrollbar-thumb {
-    background: #2199E8;/* cor do indicador da posição atual */
+    background: #2199E8;
+    /* cor do indicador da posição atual */
 }
 
 /* Altera a cor da borda da barra de rolagem */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;/* cor da borda da barra de rolagem quando o mouse está sobre ela */
+    background: #555;
+    /* cor da borda da barra de rolagem quando o mouse está sobre ela */
 }
 
 
 /* Estilos para a barra superior */
 .top-bar {
     display: flex; /* Ativa o modelo de layout flexível */
-    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal */
-    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal (horizontal) */
+    align-items: center;
 }
 
 /* Estilos para a lista de menu */
-.top-bar .menu {
+.menu {
     display: flex; /* Ativa o modelo de layout flexível para os itens do menu */
     padding: 0; /* Remove o preenchimento padrão da lista */
     list-style: none; /* Remove os marcadores de lista */
 }
 
 /* Estilos para os itens do menu */
-.top-bar .menu-li {
+.menu-li {
     font-size: 1em; /* Tamanho de fonte padrão */
     padding: 0.5em 1em; /* Espaçamento interno */
 }
@@ -424,10 +428,6 @@ label {
 .top-bar-right {
     display: flex; /* Ativa o modelo de layout flexível */
     align-items: center; /* Centraliza verticalmente os itens */
-
-    a{
-        margin-right: 5px;
-    }
 }
 
 /* Media query para ajustes em dispositivos móveis */
@@ -435,19 +435,10 @@ label {
     .menu-li {
         font-size: 0.8em; /* Reduz o tamanho da fonte para telas menores */
     }
-
-    .top-bar {
-        flex-direction: column; /* Altera a direção do flexbox para coluna */
-    }
-
-    .top-bar-left, .top-bar-right {
-        align-self: center; /* Centraliza horizontalmente os itens */
-    }
 }
 
 
-#Modal1{
+#Modal1 {
     color: #222831;
     margin-top: 30% !important;
 }
-
