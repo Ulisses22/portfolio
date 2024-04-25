@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
-.client-logo{
+.client-logo {
     margin-bottom: 10px;
 }
 
@@ -32,7 +32,6 @@ hr {
 }
 
 #techs {
-    margin-top: 50px;
 
     .column {
         margin: 0%;
@@ -43,6 +42,10 @@ hr {
     #skills p {
         font-weight: bold;
     }
+}
+
+#techs, #projects, #collaborated, #social{
+    margin-top: 40px;
 }
 
 /* brands */
@@ -97,17 +100,22 @@ hr {
 #languageList .fi-star {
     padding-left: 1px;
 }
+
 /* Estilos para alinhar verticalmente as estrelas */
 #languageList {
-    list-style-type: none; /* Remover estilos padrão de lista */
+    list-style-type: none;
+    /* Remover estilos padrão de lista */
     padding: 0;
     margin: 0;
 }
 
 #languageList li {
-    display: flex; /* Usar layout flexível */
-    align-items: center; /* Alinhar verticalmente os itens */
-    justify-content: space-between; /* Espaçamento igual entre os itens */
+    display: flex;
+    /* Usar layout flexível */
+    align-items: center;
+    /* Alinhar verticalmente os itens */
+    justify-content: space-between;
+    /* Espaçamento igual entre os itens */
 }
 
 
@@ -119,9 +127,6 @@ hr {
     border: none !important;
 }
 
-#social{
-    margin-top: 50px;
-}
 
 .social-icons a {
     padding-left: 0% !important;
@@ -323,7 +328,7 @@ label {
     margin-bottom: 10px;
 }
 
-.callout{
+.callout {
     margin-bottom: 30px !important;
 }
 
@@ -439,26 +444,32 @@ label {
 /* Estilos para a barra superior */
 
 .top-bar {
-    display: flex; /* Ativa o modelo de layout flexível */
-    justify-content: space-between; /* Distribui os elementos ao longo do eixo principal (horizontal) */
+    display: flex;
+    /* Ativa o modelo de layout flexível */
+    justify-content: space-between;
+    /* Distribui os elementos ao longo do eixo principal (horizontal) */
     align-items: center;
 }
 
 
 /* Estilos para os itens do menu */
 .menu-li {
-    font-size: 1em; /* Tamanho de fonte padrão */
-    padding: 0.5em 1em; /* Espaçamento interno */
+    font-size: 1em;
+    /* Tamanho de fonte padrão */
+    padding: 0.5em 1em;
+    /* Espaçamento interno */
 }
 
 /* Estilos para a barra direita */
 .top-bar-right {
-    display: flex; /* Ativa o modelo de layout flexível */
-    align-items: center; /* Centraliza verticalmente os itens */
+    display: flex;
+    /* Ativa o modelo de layout flexível */
+    align-items: center;
+    /* Centraliza verticalmente os itens */
     padding: 0;
     font-size: 3ch;
 
-    a{
+    a {
         margin-right: 5px;
     }
 }
@@ -466,18 +477,25 @@ label {
 /* Media query para ajustes em dispositivos móveis */
 @media only screen and (max-width: 600px) {
     .menu-li {
-        font-size: 0.8em; /* Reduz o tamanho da fonte para telas menores */
+        font-size: 0.8em;
+        /* Reduz o tamanho da fonte para telas menores */
     }
 
-    .top-bar{
+    .top-bar {
         padding-left: 0px !important;
     }
 }
 
 
-#Modal1, #Modal2 {
+#Modal1,
+#Modal2 {
     color: #222831;
     margin-top: 30% !important;
+    padding-left: 30px;
+
+    ul{
+        padding-left: 25px;
+    }
 }
 
 
@@ -486,11 +504,14 @@ body {
 }
 
 
-label{
-    
+label {
+
     font-size: medium !important;
 }
 
-.about-portfolio{
-    padding-left: 30px;
+.point+.row {
+    opacity: 0;
+    /* Começa com opacidade 0 (invisível) */
+    transition: opacity 5s;
+    /* Adiciona uma transição suave */
 }
