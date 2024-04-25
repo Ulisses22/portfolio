@@ -186,7 +186,7 @@ html {
 
 .general-text,
 label {
-    color: white;
+    color: #ffffff !important;
 }
 
 .avatar {
@@ -300,6 +300,10 @@ label {
     margin-bottom: 10px;
 }
 
+
+
+/* skills-section */
+
 .skills-section .icon {
     position: absolute;
     background-color: #2199E8;
@@ -312,8 +316,6 @@ label {
     width: 100%;
     padding: 0px 10px 0px 10px;
 }
-
-/* skills-section */
 
 .skills-section h5 {
     font-size: 20px;
@@ -455,4 +457,10 @@ label {
 
 body {
     margin: 0;
+}
+
+
+label{
+    
+    font-size: medium !important;
 }
