@@ -18,8 +18,8 @@
     margin-bottom: 10px;
 }
 
-.client-logo:hover {
-    filter: none;
+.client-logo {
+    filter: grayscale(100%);
 }
 
 .client-logo {
