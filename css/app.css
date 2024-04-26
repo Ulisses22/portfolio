@@ -335,9 +335,22 @@ label {
 
 /* skills-section */
 
-.skills-section .icon {
+/* Another theme option */
+/* .skills-section .icon {
     position: absolute;
     background-color: #2199E8;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -40px;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+} */
+
+.skills-section .icon {
+    position: absolute;
+    border: #2199E8 2px solid;
+    color: #2199E8;
+    font-weight: bold;
     /* border-radius: 30% 30% 30% 30%; */
     left: 50%;
     /* Centraliza horizontalmente */
@@ -347,6 +360,7 @@ label {
     width: 100%;
     padding: 0px 10px 0px 10px;
 }
+
 
 .skills-section h5 {
     font-size: 20px;
