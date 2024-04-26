@@ -49,6 +49,9 @@ hr {
 }
 
 /* brands */
+.brands{
+    margin-bottom: 40px;
+}
 .brands .columns {
     text-align: center;
     display: inline-block;
