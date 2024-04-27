@@ -93,7 +93,7 @@ hr {
 
 .info-work-education {
     padding: 0% !important;
-    margin: 0% !important;
+    margin: 10% 0% 0% 0% !important;
     width: auto !important;
 }
 
@@ -222,8 +222,8 @@ label {
 }
 
 .avatar {
-    border-radius: 0%; 
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 0% 100% 100% 100%; /* pop up */
+    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
 }
 
 .column-avatar {
