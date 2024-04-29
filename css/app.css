@@ -222,7 +222,12 @@ label {
 }
 
 .avatar {
-    border-radius: 0% 100% 100% 100%; /* pop up */
+    /* pop up */
+    /* border-radius: 100% 0% 100% 100%;  */
+
+    /* cicle */ 
+    border-radius: 100% 100% 100% 100%;
+    /*  */
     /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
 }
 
