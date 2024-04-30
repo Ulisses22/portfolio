@@ -480,7 +480,7 @@ label {
 .menu-li {
     font-size: 1em;
     /* Tamanho de fonte padrão */
-    padding: 0.5em 1em;
+    padding: 0.5em !important;
     /* Espaçamento interno */
 }
 
