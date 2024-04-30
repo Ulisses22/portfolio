@@ -317,6 +317,7 @@ label {
 }
 
 .card-footer span {
+    background-color: #007bff;
     font-weight: bold;
     margin: 2px;
     font-size: small;
