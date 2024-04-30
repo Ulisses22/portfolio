@@ -318,9 +318,10 @@ label {
 
 .card-footer span {
     font-weight: bold;
+    margin: 2px;
     font-size: small;
     color: rgb(255, 255, 255) !important;
-    padding: 5px;
+    padding: 6px;
     border-radius: 100px 100px 100px 100px !important;
 }
 
