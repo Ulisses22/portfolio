@@ -194,6 +194,10 @@ html {
     background-color: #222831 !important
 }
 
+.fi-eye{
+    font-size: larger;
+}
+
 .third-color {
     /* background: #ffffff; */
     color: #ffffff !important;
